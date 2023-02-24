@@ -7,9 +7,38 @@
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
- 
+    <h1>Etch-A-Sketch</h1>
+    <h3 id="squareSize">Squares: 20x20</h3>
+    <div class="content">
+
+    </div>
+    <div class="buttonsContainer">
+        <div class="dimensionsContainer">
+        <label for="dimensions">Change board size:</label>
+        <input type="text" id="dimInput">
+        <button onclick="getDimensions()" type="button" id="dimensions">Submit</button>
+        </div>
+
+        <div class="palleteContainer">
+            <div class="pallete">
+                <button onclick="chooseColor('red')" class='red'></button>
+                <button onclick="chooseColor('yellow')" class='yellow'></button>
+                <button onclick="chooseColor('blue')" class='blue'></button>
+                <button onclick="chooseColor('green')" class="green"></button>
+                <button onclick="chooseColor('orange')" class="orange"></button>
+                <button onclick="chooseColor('purple')" class="purple"></button>
+                <button onclick="chooseColor('pink')" class="pink"></button>
+                <button onclick="chooseColor('brown')" class="brown"></button>
+            </div>
+            <button onclick="chooseRandomColor()" class="random">Random</button>
+            <button onclick="chooseSimpleRandom()" class="random">Simple</button>
+            <button onclick="chooseColor('white')" class="erase">Eraser</button>
+            <button onclick="cleanBoard()" class="clean">Clean Board</button>
+        </div>
+    </div>
+    <div id="errorMessage">You must enter a number between 10 and 100</div>
+
     <script src="./app.js"></script>
 </body>
 </html>

@@ -1,0 +1,108 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+
+}
+.content {
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 400px;
+    margin: 10px;
+}
+
+.dimensionsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+#dimInput {
+    width: 200px;
+}
+
+.pallete {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100px;
+
+}
+
+.palleteContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.random {
+    width: 100px;
+    height: 25px;
+}
+
+.red,
+.yellow,
+.blue,
+.green,
+.orange,
+.purple,
+.pink,
+.brown {
+    height: 23px;
+    width: 23px;
+    border: 1px solid black;
+    margin: 1px;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.brown {
+    background-color: brown;
+}
+
+#errorMessage {
+    display: none;
+    font-size: 50px;
+    border: 3px solid black;
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+}
